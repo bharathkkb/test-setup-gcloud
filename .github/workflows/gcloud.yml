@@ -15,3 +15,11 @@ jobs:
     - uses: google-github-actions/setup-gcloud@tequilarista-retire-cruft
     - run: gcloud info
     - run: which gcloud
+  gcloud-old:
+    name: test-setup-gcloud-old
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@tequilarista-retire-cruft
+    - run: gcloud info
+    - run: which gcloud
